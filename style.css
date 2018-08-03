@@ -1,0 +1,154 @@
+/** 
+Homework #1 CSS Stylesheet
+**/
+* {
+    
+    text-align: center;
+    
+   
+    font-family: Arial, Helvetica Neue, Helvetica, sans serif;
+    font-size: 18px;
+    color: #777;
+    width: 960px;
+    margin-left: 90px; 
+    }
+
+    header {
+    padding: 30px;
+    margin-top: 10px;
+    color: #777;
+    background: white;
+    width: 960px;
+    height: 30px;    
+        
+
+    }
+    nav { 
+    background-color: #777;
+    padding: 30px;
+    margin-top: 10px;
+    color: #777;
+    background: white;
+    width: 960px;
+    height: 30px;
+    }
+    
+    .bottom-class {
+      display: inline-block;
+    }
+
+
+
+    section {     
+    text-align: center;
+    float: left;
+    background-color: gray;
+    padding: 15px 5px 5px 5px;
+    margin: 20px 5px 20px 0px;
+    color: gray;
+    background: white;
+    width: 55%;
+    height: 250px;}    
+     
+   
+        article {
+            text-align: center;         
+            background-color: #777;
+            padding:10px;
+            margin: 50px 10px 10px 10px;
+            color: white;
+            background: gray;
+            width: 92%;
+            height: 150px;
+         }
+
+         h1 {
+             text-align: center;
+             
+            background-color: gray; 
+            padding: 10px;
+            margin: 25px 5px 7px 7px;
+            color: gray;
+            background: white;
+            width: 92%;
+         }
+
+         p { 
+             text-align: center;            
+           background-color: gray; 
+           padding: 10px;
+           margin: 10px 5px 7px 7px;
+           color: gray;
+           background: white;
+           width: 92%;
+           }
+    
+        aside {
+                
+            text-align: center; 
+            background-color: white;
+            float: right;
+            padding: 15px;
+            margin-top: -290px;
+            color: #777;
+            background: white;
+            width: 45%;
+            height: 250px;
+           
+
+            }
+     
+    footer {
+              
+      background-color: #777;
+      padding: 30px;
+      margin-top: 10px;
+      color: #777;
+      background: white;
+      width: 960px;
+      height: 30px;
+        clear: both;
+            }    
+/*  
+section id="section1">
+  section
+  <article>
+    article
+    <div class="headers">
+      h1, h2, h3
+    </div>
+    <div class="paragraph">
+      pb
+    </div>
+  </article>
+</section>
+
+
+#section1 {
+  background: #666666;
+  padding: 20px;
+  float: left;
+  width: 500px;
+}
+
+article {
+  background: red;
+  padding: 20px;
+  margin: 20px;
+}
+
+.headers {
+  background: #999999;
+  margin: 10px;
+  padding: 10px;
+}
+
+.paragraph {
+  background: #444444;
+  margin: 10px;
+  padding: 10px;
+}*/
+
+
+        
+    
