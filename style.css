@@ -44,7 +44,7 @@ Homework #1 CSS Stylesheet
     float: left;
     background-color: gray;
     padding: 15px 5px 5px 5px;
-    margin: 20px 5px 20px 0px;
+    margin: 20px 0px 10px 0px;
     color: gray;
     background: white;
     width: 55%;
@@ -88,13 +88,13 @@ Homework #1 CSS Stylesheet
             text-align: center; 
             background-color: white;
             float: right;
-            padding: 15px;
-            margin-top: -290px;
+            padding: 10px;
+            margin-top: -280px;
             color: #777;
             background: white;
             width: 45%;
             height: 250px;
-           
+            position: relative; right: 32px;           
 
             }
      
@@ -109,46 +109,3 @@ Homework #1 CSS Stylesheet
       height: 30px;
         clear: both;
             }    
-/*  
-section id="section1">
-  section
-  <article>
-    article
-    <div class="headers">
-      h1, h2, h3
-    </div>
-    <div class="paragraph">
-      pb
-    </div>
-  </article>
-</section>
-
-
-#section1 {
-  background: #666666;
-  padding: 20px;
-  float: left;
-  width: 500px;
-}
-
-article {
-  background: red;
-  padding: 20px;
-  margin: 20px;
-}
-
-.headers {
-  background: #999999;
-  margin: 10px;
-  padding: 10px;
-}
-
-.paragraph {
-  background: #444444;
-  margin: 10px;
-  padding: 10px;
-}*/
-
-
-        
-    
