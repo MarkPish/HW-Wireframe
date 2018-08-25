@@ -1,0 +1,73 @@
+/**
+ * Float Layout Activity
+ **/
+
+* {
+  box-sizing: border-box;
+  text-align: center;
+}
+
+body {
+}
+<link rel="stylesheet" type="text/css" href="https://meyerweb.com/eric/tools/css/reset/reset200802.css">
+header {
+  padding: 20px;
+  margin-bottom: 20px;
+  color: #333333;
+  background: #cccccc;
+}
+
+section {
+  background: #eeeeee;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+#left {
+  background: #666666;
+  float: left;
+  width: 33.3%;
+}
+
+#middle {
+  background: #888888;
+  float: left;
+  width: 33.3%;
+}
+
+#right {
+  background: #666666;
+  float: left;
+  width: 33.3%;
+}
+
+#full {
+  background: #eeeeee;
+  padding: 20px;
+  margin-bottom: 20px;
+  overflow: auto;
+  clear: both;
+}
+
+#division {
+  background: #6ea3da;
+  padding: 20px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+aside {
+  background: #ffffff;
+  float: left;
+  margin: 20px;
+  width: 33.3%;
+  height: 200px;
+  border: 1px solid #eee;
+  
+}
+
+footer {
+  background: #cccccc;
+  margin: 20px;
+  padding: 20px;
+}

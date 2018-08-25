@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+}
+
+.content {
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+#fixed {
+    background: #999999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 40px;
+    margin: 0;
+    text-align: center;
+}
+
+#relative {
+    background: #999999;
+    position: relative;
+    height:200px;
+    padding: 40px;
+    margin: 0;
+    text-align: center;
+}
+
+#absolute {
+    background: #777777;
+    position: absolute;
+    right: -30px;
+    bottom: 0px;
+    width: 250px;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 36px;
+    line-height: 45px;
+}
+
+p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 20px;
+}
