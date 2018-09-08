@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="   crossorigin="anonymous"></script>   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    
+
+<div>
+    <p>NEW YORK TIMES SEARCH</p>
+</div>
+
+    <form>
+        <div class="searchTerm">
+          <label for="formGroupExampleInput">Example label</label>
+          <input type="text" class="form-control1" id="Input1" placeholder="Example input">
+        </div>
+        <div class="recordsNum">
+          <label for="formGroupExampleInput2">Another label</label>
+          <input type="text" class="form-control2" id="Input2" placeholder="Another input">
+        </div>
+        <div class="startYear">
+            <label for="formGroupExampleInput">Example label</label>
+            <input type="text" class="form-control3" id="Input3" placeholder="Example input">
+          </div>
+          <div class="endYear">
+            <label for="formGroupExampleInput2">Another label</label>
+            <input type="text" class="form-control4" id="Input4" placeholder="Another input">
+          </div>
+      </form>
+
+      <button type="button" id="search" class="btn btn-primary btn-sm">Search</button>
+<button type="button" class="btn btn-secondary btn-sm">Clear Results</button>
+<script>
+//on click to grab inputs and then make ajax call
+    $('#search').on("click", function(){
+    var query = "?q=" + $("#Input1")[0].value
+ var queryURL = "https://api.nytimes.com/svc/search/v2/articlesearch.json?q=anything&api_key=2c5b5293450c4b638469db181b9c5206" + query;
+      $.ajax({
+        url: queryURL,
+        method: "GET"
+      }).then(function(response) {
+        // Step 1: Run this file, click a button, and see what the response object looks like in the browser's console.
+        // Open up the data key, then open up the 0th, element. Study the keys and how the JSON is structured.
+        console.log(response);
+      })
+    })
+</script>
+</body>
+</html>

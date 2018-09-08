@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>CountDown Button with Firebase!</title>
+
+  <!-- Firebase Reference -->
+  <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+
+</head>
+
+    
+    <body>
+      
+      <script>
+      var config = {
+        apiKey: "AIzaSyDFqTQB0ms1OZHE8Pdds3V6b2ipWjWptz0",
+        authDomain: "my-even-awesomer-project.firebaseapp.com",
+        databaseURL: "https://my-even-awesomer-project.firebaseio.com",
+        projectId: "my-even-awesomer-project",
+        storageBucket: "my-even-awesomer-project.appspot.com",
+        messagingSenderId: "728654586707"
+      };
+      firebase.initializeApp(config);
+
+
+  <h1>Only
+    <span id="click-value"></span> clicks to go!!</h1>
+
+  <button id="click-button">Click Me!!!!</button>
+  <button id="restart-button">Restart</button>
+
+  $("#click-button").on("click", function() {
+
+    // Add to clickCounter
+    clickCounter--;
+
+    //  Store Click Data to Firebase in a JSON property called clickCount
+    // Note how we are using the Firebase .set() method
+    database.ref().set({
+      clickCount: clickCounter
+    });
+
+
+  <!-- jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- Script -->
+  <script src="logic.js"></script>
+
+</body>
+
+</html>
